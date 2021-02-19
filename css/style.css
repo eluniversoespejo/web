@@ -202,7 +202,8 @@ body::-webkit-scrollbar-thumb{
 @media screen and (max-width: 765px){  
 
     .grid{     
-        width: 600px; 
+        width: 500px; 
+        min-width: 550px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr 0.9fr 0.2fr;
         grid-template-areas: "header    "                              
@@ -216,7 +217,6 @@ body::-webkit-scrollbar-thumb{
     }
 
     .navbar{
-        width: 80%;
         padding: 1rem 0;
     }
     
