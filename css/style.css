@@ -26,7 +26,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4rem 4rem;
+    margin: 4rem;
     background: var(--color-naranjasuave);
 }
 
@@ -200,9 +200,11 @@ body::-webkit-scrollbar-thumb{
 
 
 @media screen and (max-width: 765px){  
+    .body{
+        margin: 1rem;
+    }
 
-    .grid{
-        padding: 0.5rem;
+    .grid{        
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr 0.9fr 0.2fr;
         grid-template-areas: "header    "                              
@@ -265,7 +267,7 @@ body::-webkit-scrollbar-thumb{
 
     .footer{
         border-radius: 0px 0px 20px 20px;
-        padding: 0 0 2rem 0;
+        padding: 0rem 0rem 2rem 0rem;
     }
   
     
