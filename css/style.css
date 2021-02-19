@@ -214,13 +214,22 @@ body::-webkit-scrollbar-thumb{
     .header{
         border-radius: 20px 20px 0px 0px;
     }
+
+    .navbar{
+        width: 80%;
+        padding: 1rem 0;
+    }
     
     .navbar ul li a{
         font-size: 1.2rem;
     }
 
+    .navbar ul li a:first-child{
+        padding: 0 0.3rem;
+    }
+
     .navbar img{
-        width: 10rem;
+        width: 9rem;
     }
 
     .sectionOne{
