@@ -201,10 +201,12 @@ body::-webkit-scrollbar-thumb{
 
 @media screen and (max-width: 765px){  
     .body{
-        margin: 1rem;
+        margin: 0.1rem;
     }
 
-    .grid{        
+    .grid{     
+        width: 600;
+        min-width: 500;   
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr 0.9fr 0.2fr;
         grid-template-areas: "header    "                              
