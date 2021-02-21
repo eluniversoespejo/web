@@ -291,6 +291,13 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     justify-content: center;
 }
+
+.checkSupport div a{
+    text-decoration: none;
+    color: var(--color-azulfuerte);
+}
+
+
 .checkSupport div img{
     width: 30vw;
     padding: 50px;
