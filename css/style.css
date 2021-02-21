@@ -55,16 +55,35 @@ body::-webkit-scrollbar-thumb{
                          "aside footer  ";    
     }
 
+.gridSupport{
+    width: 1280px;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 5fr 0.5fr;
+    grid-template-rows: 1fr 5fr 0.5fr;
+    grid-template-areas: "header  aside"
+                         "section aside"
+                         "footer  aside";    
+    }
+
 .header{
     grid-area: header;
     background: var(--color-blanco);    
     border-radius: 0px 20px 0px 0px;
 }
 
+.gridSupport .header{
+    border-radius: 20px 0px 0px 0px;
+}
+
 .asideOne{
     grid-area: aside;
     background: var(--color-negro);
     border-radius: 20px 0px 0px 20px;
+}
+
+.gridSupport .asideOne{
+    border-radius: 0px 20px 20px 0px;
 }
 
 .sectionOne{
@@ -74,9 +93,12 @@ body::-webkit-scrollbar-thumb{
 
 .footer{
     grid-area: footer;
-    background: var(--color-blanco);
-    
+    background: var(--color-blanco);    
     border-radius: 0px 0px 20px 0px;
+}
+
+.gridSupport .footer{
+    border-radius: 0px 0px 0px 20px;
 }
 
 /*NAV ASIDE*/
@@ -154,6 +176,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .navbar ul li a:hover{
+    font-size: 2.2rem;
     color: var(--color-azulsuave);
 }
 
@@ -186,6 +209,93 @@ body::-webkit-scrollbar-thumb{
     height: 100%;
 }
 
+/*SECTION TWO SUPPORT*/
+
+.sectionOne .cardSupport{
+    width: 95%;    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.sectionOne .cardSupport .card {
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 20px;       
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    }   
+    
+.sectionOne .cardSupport .card .img1{
+    margin: 1rem;
+    width: 7vw;
+    transition: all 0.5s;
+    }
+
+.sectionOne .cardSupport .card .img1:hover{
+    width: 10vw;
+    }
+
+.sectionOne .cardSupport .card .img2{
+    margin: 1rem;
+    width: 10vw;
+    transition: all 0.5s;
+    }
+
+.sectionOne .cardSupport .card .img2:hover{
+    width: 13vw;
+}
+
+.sectionOne .cardSupport .title {
+    color: grey;
+    font-size: 18px;
+    }
+
+.sectionOne .cardSupport .card h1{
+    font-size: 2.5rem;
+    }
+
+.sectionOne .cardSupport .card p{
+    padding: 1rem;
+    }
+
+.sectionOne .cardSupport .card p:hover{
+    padding: 1rem;
+    }
+    
+
+.sectionOne .cardSupport a {                
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    }
+    
+.sectionOne .cardSupport a:hover{
+    font-weight: 700;
+    color: var(--color-azulfuerte);
+    }    
+
+
+/*Pagina Donation*/
+.checkSupport div{
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.checkSupport div img{
+    width: 30vw;
+    padding: 50px;
+}
+
 /*FOOTER*/
 
 .footer{
@@ -204,7 +314,8 @@ body::-webkit-scrollbar-thumb{
         margin: 1rem;
     }
 
-    .grid{     
+    .grid,
+    .gridSupport{     
         width: 100%;
         min-width: 400px;   
         height: 100%;
@@ -217,6 +328,7 @@ body::-webkit-scrollbar-thumb{
                              "footer    ";
     }
 
+    .gridSupport .header,
     .header{
         border-radius: 20px 20px 0px 0px;
     }
@@ -241,6 +353,34 @@ body::-webkit-scrollbar-thumb{
         padding: 0 1rem;
     }
 
+    .sectionOne .cardSupport{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .sectionOne .cardSupport .card h1{
+        font-size: 2rem;
+    }
+
+    .sectionOne .cardSupport .card .img1{
+        width: 15vw;
+    }
+
+    .sectionOne .cardSupport .card .img1:hover{
+        width: 18vw;
+    }
+
+    .sectionOne .cardSupport .card .img2{
+        width: 18vw;
+    }
+
+    .sectionOne .cardSupport .card .img2:hover{
+        width: 21vw;
+    }
+
+    .gridSupport .asideOne,
     .asideOne{
         display: flex;
         flex-direction: row;
@@ -269,6 +409,7 @@ body::-webkit-scrollbar-thumb{
         font-size: 2.5rem;
     }
 
+    .gridSupport .footer,
     .footer{
         border-radius: 0px 0px 20px 20px;
         padding: 0rem 0rem 2rem 0rem;
